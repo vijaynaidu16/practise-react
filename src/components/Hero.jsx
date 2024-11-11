@@ -1,4 +1,5 @@
 import Cards from "./Cards";
+import Footer from "./Footer";
 import Header from "./Header";
 
 const Hero = () => {
@@ -17,6 +18,7 @@ const Hero = () => {
       </div>
     </div>
     <Cards/>
+    <Footer/>
     </>
   );
 };

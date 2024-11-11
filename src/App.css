@@ -27,7 +27,8 @@
   margin-bottom: 20px;
 }
 
-.btn1, .btn2{
+.btn1,
+.btn2 {
   padding: 10px 20px;
   font-weight: 500;
   border: none;
@@ -37,12 +38,12 @@
   color: white;
 }
 
-.btn2{
+.btn2 {
   background-color: white;
   color: black;
 }
 
-.title{
+.title {
   font-size: 4rem;
   line-height: 70px;
 }
@@ -74,19 +75,18 @@ nav a {
   font-size: 25px;
 }
 
-
 .cards {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   flex-direction: row;
-  height: 100vh;
+  /* height: 100vh; */
   gap: 20px;
 }
 
 .card-main img {
-  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.1);
   width: 100%;
   border-radius: 10px;
 }
@@ -104,7 +104,6 @@ nav a {
   border: none;
   margin-top: 10px;
   font-size: 13px;
-  
 }
 
 .card-main h4 {
@@ -112,41 +111,64 @@ nav a {
   align-items: center;
   justify-content: start;
   gap: 10px;
-
 }
 
+@media (max-width: 900px) {
+  .title {
+    font-weight: 700;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 900px ) {
+@media (min-width: 900px) {
   .title {
     font-weight: 700;
     margin-bottom: 20px;
     width: 100%;
   }
 
+  .footer-1 {
+    padding: 10px 60px;
+  }
 }
 
-@media (min-width: 900px ) {
-  .title {
-    font-weight: 700;
-    margin-bottom: 20px;
-    width: 100%;
-  }
+.footer-1 {
+  gap: 50px;
+  background-color: rgb(104, 6, 242);
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 90px;
+}
+
+.footer-1-1 ul li {
+  margin: 10px;
+}
+.footer {
+  padding: 80px;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #333;
+}
+
+.footer-2 {
+margin-top: 50px;
+}
+
+.company-text {
+  font-weight: 800;
+
+}
+
+.footer-2-2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
